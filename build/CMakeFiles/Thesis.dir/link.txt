@@ -1,1 +1,0 @@
-/opt/intel/oneapi/compiler/2025.3/bin/icpx -Wl,--dependency-file=CMakeFiles/Thesis.dir/link.d CMakeFiles/Thesis.dir/src/Main.cpp.o -o Thesis  -lCpp-Project_lib -qmkl
