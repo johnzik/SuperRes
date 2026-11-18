@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/vboxuser/dev/Thesis/lib/libSuperRes_lib.a CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o
+/usr/bin/ranlib /home/vboxuser/dev/Thesis/lib/libSuperRes_lib.a

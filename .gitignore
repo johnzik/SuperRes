@@ -1,0 +1,12 @@
+# VS Code files
+.vscode/
+
+# Ignore contents of bin, obj and lib
+bin/
+obj/
+lib/
+
+# Keep gitkeep
+!bin/.gitkeep
+!obj/.gitkeep
+!lib/.gitkeep
