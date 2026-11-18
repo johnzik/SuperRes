@@ -1,0 +1,4 @@
+/home/vboxuser/dev/SuperRes/build/CMakeFiles/SuperRes_lib.dir
+/home/vboxuser/dev/SuperRes/build/CMakeFiles/Main.dir
+/home/vboxuser/dev/SuperRes/build/CMakeFiles/edit_cache.dir
+/home/vboxuser/dev/SuperRes/build/CMakeFiles/rebuild_cache.dir
