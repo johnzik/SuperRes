@@ -3,10 +3,10 @@
 
 # Ignore contents of bin, obj and lib
 bin/
-obj/
+build/
 lib/
 
 # Keep gitkeep
 !bin/.gitkeep
-!obj/.gitkeep
+!build/.gitkeep
 !lib/.gitkeep
