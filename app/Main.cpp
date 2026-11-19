@@ -20,7 +20,11 @@ int main()
     //      ChamPockSR_HuberTV
     // =====================================
 
+    dense::matrix<float> p = {4, 4, 2, 3};
     
-    
+    std::cout << "p[0,0,0,0]: " << p.get_value_at(0) << std::endl;
+    std::cout << "p[3,3,0,0]: " << p.get_value_at(90) << std::endl;
+    std::cout << "p[3,3,1,0]: " << p.get_value_at(93) << std::endl;
+    std::cout << "p[3,3,0,1]: " << p.get_value_at(91) << std::endl;
     return 0;
 }

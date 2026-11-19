@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/vboxuser/dev/SuperRes/src/ChamPockSR_HuberTV.cpp" "CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o" "gcc" "CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o.d"
   "/home/vboxuser/dev/SuperRes/src/read_img2DenseMat.cpp" "CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o" "gcc" "CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o.d"
+  "/home/vboxuser/dev/SuperRes/src/read_img2UpscDenseMat.cpp" "CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o" "gcc" "CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

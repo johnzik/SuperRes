@@ -28,7 +28,11 @@ dense::matrix<float> read_img2DenseMat(const cv::String& img_path)
     std::vector<size_t> dimVec = {rowSize, colSize, depthSize};
 
     // Store the strides vector
-    std::vector<int> strides = {(int)colSize, (int)1, (int)(rowSize * colSize)};
+    std::vector<int> strides = {
+        static_cast<int>(colSize * depthSize),
+        static_cast<int>(depthSize),
+        1
+    };
 
     dense::matrix<float> imgMat(rgbVec, dimVec, strides);
 

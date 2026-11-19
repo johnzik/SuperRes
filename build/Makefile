@@ -167,6 +167,30 @@ app/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/app/Main.cpp.s
 .PHONY : app/Main.cpp.s
 
+src/ChamPockSR_HuberTV.o: src/ChamPockSR_HuberTV.cpp.o
+.PHONY : src/ChamPockSR_HuberTV.o
+
+# target to build an object file
+src/ChamPockSR_HuberTV.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o
+.PHONY : src/ChamPockSR_HuberTV.cpp.o
+
+src/ChamPockSR_HuberTV.i: src/ChamPockSR_HuberTV.cpp.i
+.PHONY : src/ChamPockSR_HuberTV.i
+
+# target to preprocess a source file
+src/ChamPockSR_HuberTV.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.i
+.PHONY : src/ChamPockSR_HuberTV.cpp.i
+
+src/ChamPockSR_HuberTV.s: src/ChamPockSR_HuberTV.cpp.s
+.PHONY : src/ChamPockSR_HuberTV.s
+
+# target to generate assembly for a file
+src/ChamPockSR_HuberTV.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.s
+.PHONY : src/ChamPockSR_HuberTV.cpp.s
+
 src/read_img2DenseMat.o: src/read_img2DenseMat.cpp.o
 .PHONY : src/read_img2DenseMat.o
 
@@ -191,6 +215,30 @@ src/read_img2DenseMat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.s
 .PHONY : src/read_img2DenseMat.cpp.s
 
+src/read_img2UpscDenseMat.o: src/read_img2UpscDenseMat.cpp.o
+.PHONY : src/read_img2UpscDenseMat.o
+
+# target to build an object file
+src/read_img2UpscDenseMat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o
+.PHONY : src/read_img2UpscDenseMat.cpp.o
+
+src/read_img2UpscDenseMat.i: src/read_img2UpscDenseMat.cpp.i
+.PHONY : src/read_img2UpscDenseMat.i
+
+# target to preprocess a source file
+src/read_img2UpscDenseMat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.i
+.PHONY : src/read_img2UpscDenseMat.cpp.i
+
+src/read_img2UpscDenseMat.s: src/read_img2UpscDenseMat.cpp.s
+.PHONY : src/read_img2UpscDenseMat.s
+
+# target to generate assembly for a file
+src/read_img2UpscDenseMat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.s
+.PHONY : src/read_img2UpscDenseMat.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -204,9 +252,15 @@ help:
 	@echo "... app/Main.o"
 	@echo "... app/Main.i"
 	@echo "... app/Main.s"
+	@echo "... src/ChamPockSR_HuberTV.o"
+	@echo "... src/ChamPockSR_HuberTV.i"
+	@echo "... src/ChamPockSR_HuberTV.s"
 	@echo "... src/read_img2DenseMat.o"
 	@echo "... src/read_img2DenseMat.i"
 	@echo "... src/read_img2DenseMat.s"
+	@echo "... src/read_img2UpscDenseMat.o"
+	@echo "... src/read_img2UpscDenseMat.i"
+	@echo "... src/read_img2UpscDenseMat.s"
 .PHONY : help
 
 
