@@ -1,6 +1,6 @@
 #include "SR_functions.hpp"
 
-dense::matrix<float> read_img2UpscDenseMat(const cv::String& img_path, int s)
+dense::matrix<dataType> read_img2UpscDenseMat(const cv::String& img_path, int s)
 {
     if (img_path.empty())
     {
@@ -9,7 +9,7 @@ dense::matrix<float> read_img2UpscDenseMat(const cv::String& img_path, int s)
 
     std::cout << "OpenCV reading image... " << std::endl;
 
-    // RGB -> flat std::vector<float> (interleaved R, G, B)
+    // RGB -> flat std::vector<dataType> (interleaved R, G, B)
     cv::Mat bgr = cv::imread(img_path, cv::IMREAD_COLOR);
     if (bgr.empty())
     {
@@ -21,7 +21,7 @@ dense::matrix<float> read_img2UpscDenseMat(const cv::String& img_path, int s)
 
     cv::Mat rgb;
     cv::cvtColor(bgr, rgb, cv::COLOR_BGR2RGB);
-    std::vector<float> rgbVec(rgb.data, rgb.data + rgb.total() * rgb.elemSize());
+    std::vector<dataType> rgbVec(rgb.data, rgb.data + rgb.total() * rgb.elemSize());
 
     size_t rowSize = rgb.rows;
     size_t colSize = rgb.cols;
@@ -37,7 +37,7 @@ dense::matrix<float> read_img2UpscDenseMat(const cv::String& img_path, int s)
         1
     };
 
-    dense::matrix<float> imgMat(rgbVec, dimVec, strides);
+    dense::matrix<dataType> imgMat(rgbVec, dimVec, strides);
 
     std::cout << "Image matrix 0-dim (Rows) size: " << imgMat.get_dim_size(0) << std::endl;
     std::cout << "Image matrix 1-dim (Columns) size: " << imgMat.get_dim_size(1) << std::endl;

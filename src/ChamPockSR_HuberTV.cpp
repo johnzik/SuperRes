@@ -1,8 +1,8 @@
 #include "SR_functions.hpp"
 
-dense::matrix<float> ChamPockSR_HuberTV(
-    dense::matrix<float> noisy_imgMat,
-    dense::matrix<float> x,
+dense::matrix<dataType> ChamPockSR_HuberTV(
+    dense::matrix<dataType> noisy_imgMat,
+    dense::matrix<dataType> x,
     int s, 
     float sgm1,
     float sgm2,
@@ -23,22 +23,22 @@ dense::matrix<float> ChamPockSR_HuberTV(
     int HR_cols = noisy_imgMat.get_dim_size(1) * s;
     
     // Initialize Chambolle-Pock variables
-    dense::matrix<float> p = {HR_rows, HR_cols, 2, 3};
-    dense::matrix<float> q = {HR_rows, HR_cols, 3};
+    dense::matrix<dataType> p = {HR_rows, HR_cols, 2, 3};
+    dense::matrix<dataType> q = {HR_rows, HR_cols, 3};
 
-    dense::matrix<float> x_bar = x;
+    dense::matrix<dataType> x_bar = x;
 
     for (size_t i=0; i < max_iter; i++)
     {
         std::cout << "Iteration: " << i << std::endl;
         
-        dense::matrix<float> x_old = x;
+        dense::matrix<dataType> x_old = x;
 
         // Step 1: Dual Ascent for p across RGB channels
         for (size_t c=0; c<3; c++)
         {
             // Returns a {HR_rows, HR_cols, 2} matrix for channel c
-            // dense::matrix<float> grad_c = opD(x_bar, c, HR_rows, HR_cols);
+            // dense::matrix<dataType> grad_c = opD(x_bar, c, HR_rows, HR_cols);
             for (int r = 0; r < HR_rows; ++r)
             {
                 for (int col = 0; col < HR_cols; ++col)

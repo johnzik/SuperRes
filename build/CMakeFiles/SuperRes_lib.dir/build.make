@@ -72,10 +72,24 @@ include CMakeFiles/SuperRes_lib.dir/flags.make
 CMakeFiles/SuperRes_lib.dir/codegen:
 .PHONY : CMakeFiles/SuperRes_lib.dir/codegen
 
+CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o: CMakeFiles/SuperRes_lib.dir/flags.make
+CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o: /home/vboxuser/dev/SuperRes/src/CVmat2DenseMat.cpp
+CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o: CMakeFiles/SuperRes_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o -MF CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o.d -o CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o -c /home/vboxuser/dev/SuperRes/src/CVmat2DenseMat.cpp
+
+CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.i"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/dev/SuperRes/src/CVmat2DenseMat.cpp > CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.i
+
+CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.s"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/dev/SuperRes/src/CVmat2DenseMat.cpp -o CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.s
+
 CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o: CMakeFiles/SuperRes_lib.dir/flags.make
 CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o: /home/vboxuser/dev/SuperRes/src/ChamPockSR_HuberTV.cpp
 CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o: CMakeFiles/SuperRes_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o"
 	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o -MF CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o.d -o CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o -c /home/vboxuser/dev/SuperRes/src/ChamPockSR_HuberTV.cpp
 
 CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.i: cmake_force
@@ -86,10 +100,38 @@ CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.s"
 	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/dev/SuperRes/src/ChamPockSR_HuberTV.cpp -o CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.s
 
+CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o: CMakeFiles/SuperRes_lib.dir/flags.make
+CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o: /home/vboxuser/dev/SuperRes/src/addGaussianNoise.cpp
+CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o: CMakeFiles/SuperRes_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o -MF CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o.d -o CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o -c /home/vboxuser/dev/SuperRes/src/addGaussianNoise.cpp
+
+CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.i"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/dev/SuperRes/src/addGaussianNoise.cpp > CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.i
+
+CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.s"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/dev/SuperRes/src/addGaussianNoise.cpp -o CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.s
+
+CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o: CMakeFiles/SuperRes_lib.dir/flags.make
+CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o: /home/vboxuser/dev/SuperRes/src/degrade_image.cpp
+CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o: CMakeFiles/SuperRes_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o -MF CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o.d -o CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o -c /home/vboxuser/dev/SuperRes/src/degrade_image.cpp
+
+CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.i"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/dev/SuperRes/src/degrade_image.cpp > CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.i
+
+CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.s"
+	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/dev/SuperRes/src/degrade_image.cpp -o CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.s
+
 CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o: CMakeFiles/SuperRes_lib.dir/flags.make
 CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o: /home/vboxuser/dev/SuperRes/src/read_img2DenseMat.cpp
 CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o: CMakeFiles/SuperRes_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o"
 	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o -MF CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o.d -o CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o -c /home/vboxuser/dev/SuperRes/src/read_img2DenseMat.cpp
 
 CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.i: cmake_force
@@ -103,7 +145,7 @@ CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.s: cmake_force
 CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o: CMakeFiles/SuperRes_lib.dir/flags.make
 CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o: /home/vboxuser/dev/SuperRes/src/read_img2UpscDenseMat.cpp
 CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o: CMakeFiles/SuperRes_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o"
 	/opt/intel/oneapi/compiler/2025.3/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o -MF CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o.d -o CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o -c /home/vboxuser/dev/SuperRes/src/read_img2UpscDenseMat.cpp
 
 CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.i: cmake_force
@@ -116,19 +158,25 @@ CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.s: cmake_force
 
 # Object files for target SuperRes_lib
 SuperRes_lib_OBJECTS = \
+"CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o" \
 "CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o" \
+"CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o" \
+"CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o" \
 "CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o" \
 "CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o"
 
 # External object files for target SuperRes_lib
 SuperRes_lib_EXTERNAL_OBJECTS =
 
+/home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a: CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o
 /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a: CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o
+/home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a: CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o
+/home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a: CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o
 /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a: CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o
 /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a: CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o
 /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a: CMakeFiles/SuperRes_lib.dir/build.make
 /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a: CMakeFiles/SuperRes_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/dev/SuperRes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/SuperRes_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SuperRes_lib.dir/link.txt --verbose=$(VERBOSE)
 

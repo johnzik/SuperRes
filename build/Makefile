@@ -167,6 +167,30 @@ app/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/app/Main.cpp.s
 .PHONY : app/Main.cpp.s
 
+src/CVmat2DenseMat.o: src/CVmat2DenseMat.cpp.o
+.PHONY : src/CVmat2DenseMat.o
+
+# target to build an object file
+src/CVmat2DenseMat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o
+.PHONY : src/CVmat2DenseMat.cpp.o
+
+src/CVmat2DenseMat.i: src/CVmat2DenseMat.cpp.i
+.PHONY : src/CVmat2DenseMat.i
+
+# target to preprocess a source file
+src/CVmat2DenseMat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.i
+.PHONY : src/CVmat2DenseMat.cpp.i
+
+src/CVmat2DenseMat.s: src/CVmat2DenseMat.cpp.s
+.PHONY : src/CVmat2DenseMat.s
+
+# target to generate assembly for a file
+src/CVmat2DenseMat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.s
+.PHONY : src/CVmat2DenseMat.cpp.s
+
 src/ChamPockSR_HuberTV.o: src/ChamPockSR_HuberTV.cpp.o
 .PHONY : src/ChamPockSR_HuberTV.o
 
@@ -190,6 +214,54 @@ src/ChamPockSR_HuberTV.s: src/ChamPockSR_HuberTV.cpp.s
 src/ChamPockSR_HuberTV.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.s
 .PHONY : src/ChamPockSR_HuberTV.cpp.s
+
+src/addGaussianNoise.o: src/addGaussianNoise.cpp.o
+.PHONY : src/addGaussianNoise.o
+
+# target to build an object file
+src/addGaussianNoise.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o
+.PHONY : src/addGaussianNoise.cpp.o
+
+src/addGaussianNoise.i: src/addGaussianNoise.cpp.i
+.PHONY : src/addGaussianNoise.i
+
+# target to preprocess a source file
+src/addGaussianNoise.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.i
+.PHONY : src/addGaussianNoise.cpp.i
+
+src/addGaussianNoise.s: src/addGaussianNoise.cpp.s
+.PHONY : src/addGaussianNoise.s
+
+# target to generate assembly for a file
+src/addGaussianNoise.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.s
+.PHONY : src/addGaussianNoise.cpp.s
+
+src/degrade_image.o: src/degrade_image.cpp.o
+.PHONY : src/degrade_image.o
+
+# target to build an object file
+src/degrade_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o
+.PHONY : src/degrade_image.cpp.o
+
+src/degrade_image.i: src/degrade_image.cpp.i
+.PHONY : src/degrade_image.i
+
+# target to preprocess a source file
+src/degrade_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.i
+.PHONY : src/degrade_image.cpp.i
+
+src/degrade_image.s: src/degrade_image.cpp.s
+.PHONY : src/degrade_image.s
+
+# target to generate assembly for a file
+src/degrade_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SuperRes_lib.dir/build.make CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.s
+.PHONY : src/degrade_image.cpp.s
 
 src/read_img2DenseMat.o: src/read_img2DenseMat.cpp.o
 .PHONY : src/read_img2DenseMat.o
@@ -252,9 +324,18 @@ help:
 	@echo "... app/Main.o"
 	@echo "... app/Main.i"
 	@echo "... app/Main.s"
+	@echo "... src/CVmat2DenseMat.o"
+	@echo "... src/CVmat2DenseMat.i"
+	@echo "... src/CVmat2DenseMat.s"
 	@echo "... src/ChamPockSR_HuberTV.o"
 	@echo "... src/ChamPockSR_HuberTV.i"
 	@echo "... src/ChamPockSR_HuberTV.s"
+	@echo "... src/addGaussianNoise.o"
+	@echo "... src/addGaussianNoise.i"
+	@echo "... src/addGaussianNoise.s"
+	@echo "... src/degrade_image.o"
+	@echo "... src/degrade_image.i"
+	@echo "... src/degrade_image.s"
 	@echo "... src/read_img2DenseMat.o"
 	@echo "... src/read_img2DenseMat.i"
 	@echo "... src/read_img2DenseMat.s"

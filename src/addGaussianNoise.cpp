@@ -1,6 +1,6 @@
 #include "SR_functions.hpp"
 
-cv::Mat addGaussianNoise(const cv::Mat& rgb, double noise_variance, double mean = 0.0)
+cv::Mat addGaussianNoise(const cv::Mat& rgb, double noise_variance, double mean)
 {
     if (noise_variance < 0.0) {
         throw std::invalid_argument("Error: Noise variance cannot be negative");

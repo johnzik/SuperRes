@@ -1,6 +1,6 @@
 #include "SR_functions.hpp"
 
-dense::matrix<float> degrade_image(const cv::String& img_path, int s, float noise_var)
+dense::matrix<dataType> degrade_image(const cv::String& img_path, int s, float noise_var)
 {
     if (img_path.empty())
     {
@@ -22,10 +22,13 @@ dense::matrix<float> degrade_image(const cv::String& img_path, int s, float nois
     cv::Mat rgb;
     cv::cvtColor(bgr, rgb, cv::COLOR_BGR2RGB);
     
-    // Downscale
-    double invScaleFactor = (1.0 / static_cast<double>(s));
-    cv::resize(rgb, rgb, cv::Size(), invScaleFactor, invScaleFactor, cv::INTER_AREA);
-
+    // Downscale if s>1
+    if (s > 1)
+    {
+        double invScaleFactor = (1.0 / static_cast<double>(s));
+        cv::resize(rgb, rgb, cv::Size(), invScaleFactor, invScaleFactor, cv::INTER_AREA);
+    }
+    
     // Add Guassian noise
     rgb = addGaussianNoise(rgb, noise_var);
 

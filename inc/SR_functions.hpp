@@ -7,6 +7,8 @@
 #include <vector>
 #include "SR_datatypes.hpp"
 #include <string>
+#include <stdexcept>
+#include <cmath>
 
 /**
  * @brief           Read image with openCV and convert it to a dense::matrix
@@ -15,8 +17,8 @@
 dense::matrix<dataType> read_img2DenseMat(const cv::String& img_path);
 
 /**
- * @brief           Convert a 3-channel RGB OpenCV Mat to a dense::matrix
- * @param img_path  An OpenCV Mat
+ * @brief      Convert a 3-channel RGB OpenCV Mat to a dense::matrix
+ * @param rgb  An OpenCV Mat
  */
 dense::matrix<dataType> CVmat2DenseMat(const cv::Mat& rgb);
 
@@ -39,7 +41,7 @@ dense::matrix<dataType> read_img2UpscDenseMat(const cv::String& img_path, int s)
  * @brief           A function that adds Gaussian noise and downsacles
  *                  an image by a factor 's'
  * @param img_path  A string containing the path of the image  
- * @param s         The downscaling factor in [0, 1] range
+ * @param s         The downscaling factor 
  * @param noise_var The Gaussian noise variance
  */
 dense::matrix<dataType> degrade_image(const cv::String& img_path, int s, float noise_var);
@@ -70,7 +72,5 @@ dense::matrix<dataType> ChamPockSR_HuberTV(
     float alpha,
     float tol
     );
-
-
 
 #endif

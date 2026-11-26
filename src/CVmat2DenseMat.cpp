@@ -1,14 +1,14 @@
 #include "SR_functions.hpp"
 
-dense::matrix<float> CVmat2DenseMat(const cv::Mat& rgb)
+dense::matrix<dataType> CVmat2DenseMat(const cv::Mat& rgb)
 {
-    if (rgb.empty() || rgb.channels() != 3) {
+    if (rgb.empty() || rgb.type() != CV_8UC3) {
         throw std::invalid_argument("Error: Expected a non-empty 3-channel RGB cv::Mat");
     }
 
     cv::Mat continuousRgb = rgb.isContinuous() ? rgb : rgb.clone();
 
-    std::vector<float> rgbVec(
+    std::vector<dataType> rgbVec(
         continuousRgb.data,
         continuousRgb.data + continuousRgb.total() * continuousRgb.elemSize()
     );
@@ -26,5 +26,5 @@ dense::matrix<float> CVmat2DenseMat(const cv::Mat& rgb)
         1
     };
     
-    return dense::matrix<float>(rgbVec, dimVec, strides);
+    return dense::matrix<dataType>(rgbVec, dimVec, strides);
 }

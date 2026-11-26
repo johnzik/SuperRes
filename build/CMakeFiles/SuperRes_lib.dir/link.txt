@@ -1,2 +1,2 @@
-/usr/bin/ar qc /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o
+/usr/bin/ar qc /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a CMakeFiles/SuperRes_lib.dir/src/CVmat2DenseMat.cpp.o CMakeFiles/SuperRes_lib.dir/src/ChamPockSR_HuberTV.cpp.o CMakeFiles/SuperRes_lib.dir/src/addGaussianNoise.cpp.o CMakeFiles/SuperRes_lib.dir/src/degrade_image.cpp.o CMakeFiles/SuperRes_lib.dir/src/read_img2DenseMat.cpp.o CMakeFiles/SuperRes_lib.dir/src/read_img2UpscDenseMat.cpp.o
 /usr/bin/ranlib /home/vboxuser/dev/SuperRes/lib/libSuperRes_lib.a
