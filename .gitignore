@@ -5,6 +5,7 @@
 bin/*
 build/*
 lib/*
+*.png
 
 # Keep gitkeep
 !bin/.gitkeep

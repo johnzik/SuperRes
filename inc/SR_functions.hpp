@@ -39,12 +39,13 @@ dense::matrix<dataType> read_img2UpscDenseMat(const cv::String& img_path, int s)
 
 /**
  * @brief           A function that adds Gaussian noise and downsacles
- *                  an image by a factor 's'
+ *                  an image by a factor 's' and then saves the output to a file
  * @param img_path  A string containing the path of the image  
  * @param s         The downscaling factor 
  * @param noise_var The Gaussian noise variance
+ * @param save_path A string containing the path of where to save the output image (omit this argument to skip saving)
  */
-dense::matrix<dataType> degrade_image(const cv::String& img_path, int s, float noise_var);
+dense::matrix<dataType> degrade_image(const cv::String& img_path, int s, float noise_var, const cv::String& save_path = "");
 
 /**
  * @brief               A function that performs Chambolle-Pock's Super-Resolution
