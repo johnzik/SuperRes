@@ -2,9 +2,9 @@
 .vscode/
 
 # Ignore contents of bin, obj and lib
-bin/
-build/
-lib/
+bin/*
+build/*
+lib/*
 
 # Keep gitkeep
 !bin/.gitkeep
