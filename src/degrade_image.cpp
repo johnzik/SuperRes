@@ -1,6 +1,11 @@
 #include "SR_functions.hpp"
 
-dense::matrix<dataType> degrade_image(const cv::String& img_path, int s, float noise_var)
+dense::matrix<dataType> degrade_image(
+    const cv::String& img_path, 
+    int s, 
+    float noise_var,
+    const cv::String& save_path
+)
 {
     if (img_path.empty())
     {
@@ -31,6 +36,17 @@ dense::matrix<dataType> degrade_image(const cv::String& img_path, int s, float n
     
     // Add Guassian noise
     rgb = addGaussianNoise(rgb, noise_var);
+
+    // Save to disk if an output path was provided
+    if (!save_path.empty())
+    {
+        cv::Mat out_bgr;
+        cv::cvtColor(rgb,out_bgr, cv::COLOR_RGB2BGR);
+        if (!cv::imwrite(save_path, out_bgr))
+        {
+            throw std::runtime_error("Error: Could not write image to: " + std::string(save_path));
+        }
+    }
 
     // Convert cv::Mat to dense::matrix
     return CVmat2DenseMat(rgb);

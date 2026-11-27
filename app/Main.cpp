@@ -14,6 +14,7 @@ int main()
     //      Parameters Initialization
     // =====================================
     int s = 2;                                      // Upscaling/Downscaling factor
+    float noise_var = 0.04f;                         // Gaussian noise variance
     float sgm1 = 1/8;                               // Gradient Dual Step Size - p
     float sgm2 = 1.0;                               // Data Dual Step Size - q
     float tau = 0.99 / (sgm1 * 8 + sgm2 / (s^2));   // Primal Step Size (tau * (8*sgm1 + sgm2/s^2) < 1)
@@ -21,14 +22,13 @@ int main()
     float lamda = 0.04;                             // TV / Huber regularization weight (lamda = 0.035-0.045 for noise_var = 0.01)
     float alpha = 0.04;                             // Huber-TV threshold (smooths small gradients, prevents staircasing)
     double tol = 1e-5;                              // Convergence Tolerance 
-
-
+    
     // =====================================
-    //      Read Image with openCV
+    //      Image Manipulation with openCV
     // =====================================
 
-    dense::matrix<float> imgMat = read_img2DenseMat("castle.jpg");
-    dense::matrix<float> Upsc_imgMat = read_img2UpscDenseMat("castle.jpg", s);
+    // Degrade the original image (omit the 4th arg to skip saving)
+    dense::matrix<dataType> noisy_img = degrade_image("castle.jpg", s, noise_var, "degraded_castle.png");
 
     // =====================================
     //      ChamPockSR_HuberTV
