@@ -24,7 +24,12 @@ endif()
 # SRC_FILES at CMakeLists.txt:43 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/vboxuser/dev/SuperRes/src/*.cpp")
 set(OLD_GLOB
+  "/home/vboxuser/dev/SuperRes/src/CVmat2DenseMat.cpp"
+  "/home/vboxuser/dev/SuperRes/src/ChamPockSR_HuberTV.cpp"
+  "/home/vboxuser/dev/SuperRes/src/addGaussianNoise.cpp"
+  "/home/vboxuser/dev/SuperRes/src/degrade_image.cpp"
   "/home/vboxuser/dev/SuperRes/src/read_img2DenseMat.cpp"
+  "/home/vboxuser/dev/SuperRes/src/read_img2UpscDenseMat.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

@@ -1,6 +1,6 @@
 #include "SR_functions.hpp"
 
-dense::matrix<float> read_img2DenseMat(const cv::String& img_path)
+dense::matrix<dataType> read_img2DenseMat(const cv::String& img_path)
 {
     if (img_path.empty())
     {
@@ -9,7 +9,7 @@ dense::matrix<float> read_img2DenseMat(const cv::String& img_path)
 
     std::cout << "OpenCV reading image... " << std::endl;
 
-    // RGB -> flat std::vector<float> (interleaved R, G, B)
+    // RGB -> flat std::vector<dataType> (interleaved R, G, B)
     cv::Mat bgr = cv::imread(img_path, cv::IMREAD_COLOR);
     if (bgr.empty())
     {
@@ -18,7 +18,7 @@ dense::matrix<float> read_img2DenseMat(const cv::String& img_path)
 
     cv::Mat rgb;
     cv::cvtColor(bgr, rgb, cv::COLOR_BGR2RGB);
-    std::vector<float> rgbVec(rgb.data, rgb.data + rgb.total() * rgb.elemSize());
+    std::vector<dataType> rgbVec(rgb.data, rgb.data + rgb.total() * rgb.elemSize());
 
     size_t rowSize = rgb.rows;
     size_t colSize = rgb.cols;
@@ -28,9 +28,13 @@ dense::matrix<float> read_img2DenseMat(const cv::String& img_path)
     std::vector<size_t> dimVec = {rowSize, colSize, depthSize};
 
     // Store the strides vector
-    std::vector<int> strides = {(int)colSize, (int)1, (int)(rowSize * colSize)};
+    std::vector<int> strides = {
+        static_cast<int>(colSize * depthSize),
+        static_cast<int>(depthSize),
+        1
+    };
 
-    dense::matrix<float> imgMat(rgbVec, dimVec, strides);
+    dense::matrix<dataType> imgMat(rgbVec, dimVec, strides);
 
     std::cout << "Image matrix 0-dim (Rows) size: " << imgMat.get_dim_size(0) << std::endl;
     std::cout << "Image matrix 1-dim (Columns) size: " << imgMat.get_dim_size(1) << std::endl;
